@@ -10,6 +10,9 @@
     font-family: 'Russo One', sans-serif;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
     background-color: black;
     color: #fff;
 }
@@ -47,19 +50,112 @@
     padding: 2.3% 14%;
     border-radius: 999em;
     transition: all 0.6s ease-out;
+    color: #fff;
 }
 
         /* SECCION: SERVICIOS COMPUTO */
 .servicios-computo{
     text-align: center;
+    width: 100%;
+    height: auto;  
+}
+
+.servicios-computo h2{
+    font-size: 45px;
+    margin-bottom: 10vh;
+}
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    /*width: 80%;
+    margin: auto;*/
+}   
+
+
+.contenedor-servicios .servicio{
+    width: 20%;
+    height: 40vh;
+    background-color: #fff;
+    color: #000;
+    margin: 3% 4%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.servicio img{
+    width: 60%;
+    position: absolute;
+    left: 23%;
+    top: -20%;
+}
+
+.servicio .text-servicio{
+    position: absolute;
+    bottom: 10%;
+    padding: 5%;
+}
+
+.text-servicio h3{
+    text-align: left;
+    color: var(--colorAzu);
+    font-size: 28px;
+    margin: 5% 0;
+}
+
+.text-servicio p{
+    text-align: left;
+    font-family: var(--letraTexto);
+    font-size: 18px;
 }
 
 
+        /* OTROS SERVICIOS */
 
+.otros-servicios{
+    width: 100%;
+    margin-top: 10vh;
+    text-align: center;
+    position: relative;
+}
+
+.otros-servicios h2{
+    font-size: 45px;
+    margin-bottom: 10vh;
+}
+
+.contenedor-otros{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.conten-otros{
+   /* position: absolute;*/
+    width: 25%;
+    height: 25vh;
+    margin: 2%;
+    position: relative;
+}
+
+.conten-otros p{
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 25%;
+}
+
+.conten-otros img{
+    width: 100%;
+}
 
 
 /* animaciones */
 .texto a:hover{
     color: var(--colorAzu);
-    background-color: #fff;   
+    background-color: #fff; 
+   
 }
+
