@@ -89,7 +89,7 @@ body{
     width: 60%;
     position: absolute;
     left: 23%;
-    top: -20%;
+    top: -29%;
 }
 
 .servicio .text-servicio{
@@ -101,14 +101,14 @@ body{
 .text-servicio h3{
     text-align: left;
     color: var(--colorAzu);
-    font-size: 28px;
+    font-size: 1.2em;
     margin: 5% 0;
 }
 
 .text-servicio p{
     text-align: left;
     font-family: var(--letraTexto);
-    font-size: 18px;
+    font-size: .9em;
 }
 
 
@@ -123,32 +123,105 @@ body{
 
 .otros-servicios h2{
     font-size: 45px;
-    margin-bottom: 10vh;
+    margin-bottom: 25vh;
 }
 
 .contenedor-otros{
-    display: flex;
+    width: 100%;
+    display: inline-flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .conten-otros{
-   /* position: absolute;*/
-    width: 25%;
-    height: 25vh;
-    margin: 2%;
-    position: relative;
+    /* position: absolute;*/
+     width: 25%;
+     height: 25vh;
+     position: relative;
+     margin: 0 5%;
+}
+
+.cont2{
+    position: absolute;
+    left: 33%;
+    top: -60%;
 }
 
 .conten-otros p{
     position: absolute;
     font-size: 40px;
-    top: 50%;
-    left: 25%;
+    top: 53%;
+    left: 10%;
 }
 
 .conten-otros img{
     width: 100%;
+}
+
+        /* CONTACTO */
+
+.contacto{
+    width: 100%;
+    height: auto;
+    margin-top: 25vh;
+}
+
+.nombre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nombre img{
+    width: 15%;
+    margin-right: 2vw;
+}
+
+.nombre h2{
+    font-size: 3.4em;
+}
+
+.contactos-datos{
+    width: 100%;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos-datos .datos{
+    text-align: center;
+    width: 40%;
+}
+
+.datos h3{
+    letter-spacing: 2px;
+    font-size: 2em;
+    color: #F9B850;
+}
+
+.datos p{
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+}
+
+.redes-sociales{
+    margin: 18vh 0 15vh 0;
+    text-align: center;
+}
+
+.redes-sociales a{
+    color: #fff;
+    font-size: 3em;
+    margin: 0 1%;
+}
+
+.redes-sociales a i{
+    transition: all .4s ease;
 }
 
 
@@ -159,3 +232,41 @@ body{
    
 }
 
+.redes-sociales a:hover i{
+    transform: scale(1.2);
+}
+
+
+            /* Resposive */
+
+@media (max-width:860px) {
+    .contactos-datos{
+        display: block;
+        width: 100%;
+    }
+    .contactos-datos .datos{
+        width: 100%;
+        margin-top: 5vh;
+    }
+}
+
+
+
+
+@media (max-width:440px) {
+    .nombre h2{
+        font-size: 2.4em;
+    }
+
+    .datos h3{
+        font-size: 1.4em;
+    }
+
+    .datos p{
+        font-size: 1em;
+    }
+    .redes-sociales a{
+        font-size: 2em;
+    }
+
+}
