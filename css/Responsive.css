@@ -5,11 +5,17 @@
         transform: translateY(0);   
     }
 
+    .otros-servicios h2{
+        margin-bottom: 0;
+    }
+    .contenedor-otros{
+        margin-top: 5vh;
+    }
+
 }
 
-
 @media (max-width:1000px){
-    
+    /* Parte inicial - PResnetacion */
     .texto h1{
         font-size: 5em;
 
@@ -26,9 +32,8 @@
     }
 }
 
-
 @media (max-width:860px) {
-    /* Parte inicial - Presentacion */
+    /* Parte final - Datos */
     .contactos-datos{
         display: block;
         width: 100%;
@@ -40,13 +45,18 @@
         margin-top: 5vh;
     }
 
+   
+
+}
+
+@media (max-width: 795px) {
     /* Section otros Servicios */
-    .conten-otros{
-        width: 70%;
-        height: 35vh;
+    .contenedor-otros{
+        width: 100%;
     }
 
 }
+
 
 @media (max-width:750px){
     /* Parte inicial - Presentacion */
@@ -92,7 +102,6 @@
         margin-top: 15vh;
     }
 }
-
 
 @media (max-width:550px){
     /* Parte inicial - Presentacion */
@@ -173,7 +182,11 @@
     }
 
     .servicio img{
-        width: 50%;
+        width: 40%;
+    }
+
+    .servicio .text-servicio{
+        transform: translateY(-30%);
     }
 
     /* Section otros Servicios */
@@ -190,7 +203,7 @@
 
 }
 
-@media (max-width:440px){
+@media (max-width:400px){
 
     /* Secction Servicios computo */
     .contenedor-servicios .servicio{
@@ -206,9 +219,7 @@
     }
 }
 
-
-
-/* Movil muy chico */ 
+            /* Movil muy chico */ 
 @media (max-width:350px){
     /* Parte final - Contactos */
     
@@ -233,15 +244,37 @@
     }
 
     .servicio img{
-        width: 60%;
+        width: 40%;
         top: -35%;
         left: 20%;
     }
+
+    .text-servicio h3{
+        font-size: 1.1em;
+    }
+    
+    .text-servicio p{
+        font-size: .9em;
+    }
+
+    .text-servicio .btnVer{
+        font-size: 1em;
+        padding: 2% 4%;
+    }
         
                     /* Otros servicios */
-        
     .otros-servicios h2{
         font-size: 2em;
         
     }
+}
+
+/* Excepciones */
+
+@media (max-width:300px){
+        /* Servicios computo */
+    .servicio .text-servicio{
+        transform: translateY(-10%);
+    }
+
 }
