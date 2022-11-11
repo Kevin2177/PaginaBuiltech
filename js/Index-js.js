@@ -1,15 +1,15 @@
+const cardServicios = document.querySelectorAll('.servicio');
 
 
 iniciar();
 function iniciar(){
-    document.addEventListener('DOMContentLoaded', animacionBtn);
+    cardServicios[0].addEventListener('mouseover', mostrarBtn);
+    cardServicios[1].addEventListener('mouseover', mostrarBtn);
+    cardServicios[2].addEventListener('mouseover', mostrarBtn);
 }
 
 
 // Funciones
-function animacionBtn(){
+function mostrarBtn(e){
 
- e
-    
-    
 }

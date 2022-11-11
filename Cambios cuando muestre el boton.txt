@@ -1,0 +1,12 @@
+
+.text-servicio p{
+
+	    margin-bottom: 10px;
+}
+
+
+.servicio .text-servicio{
+	
+	transform: translateY(-38%);
+
+}

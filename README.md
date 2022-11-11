@@ -2,9 +2,13 @@
 
 #Pendientes
 
--- Poner animacion para las letras de la empresa
+-- Poner animaciones a los recuadros de los servicios
 
--- seguir con las demas secciones del html
+-- Hacer animación del boton para los servicios de computo
 
 -- Agregar API de whatsapp y ver mas funcionales a agregar
+
+-- Agregar link  de las redes sociales 
+
+-- Checar responsive 
 

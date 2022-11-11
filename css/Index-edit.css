@@ -33,12 +33,12 @@ body{
 }
 
 .texto h1{
-    font-size: 100px;
+    font-size: 6.7em;
     letter-spacing: 2px;
 }
 
 .texto p{
-    font-size: 33px;
+    font-size: 2.3em;
     margin-bottom: 9vh;
 }
 
@@ -46,11 +46,20 @@ body{
     text-decoration: none;
     background-color: var(--colorAzu);
     font-family: var(--letraTexto);
-    font-size: 23px;
+    font-size: 1.5em;
     padding: 2.3% 14%;
     border-radius: 999em;
     transition: all 0.6s ease-out;
     color: #fff;
+}
+
+.imagen{
+    width: 40%;
+    margin-left: 5%;
+}
+
+.imagen img{
+    width: 80%;
 }
 
         /* SECCION: SERVICIOS COMPUTO */
@@ -61,7 +70,7 @@ body{
 }
 
 .servicios-computo h2{
-    font-size: 45px;
+    font-size: 3.1em;
     margin-bottom: 10vh;
 }
 
@@ -76,39 +85,56 @@ body{
 
 
 .contenedor-servicios .servicio{
-    width: 20%;
-    height: 40vh;
+    width: 280px;
+    height: 300px;
     background-color: #fff;
     color: #000;
-    margin: 3% 4%;
+    margin: 9vh 4%;
     border-radius: 20px;
     position: relative;
+    text-align: center;
+}
+
+.servicio .img-servicio{
+    width: 100%;
+    transform: translateY(-40%);
 }
 
 .servicio img{
     width: 60%;
-    position: absolute;
-    left: 23%;
-    top: -29%;
 }
 
 .servicio .text-servicio{
-    position: absolute;
-    bottom: 10%;
+    width: 100%;
+    margin: auto;
     padding: 5%;
+    transform: translateY(-30%);
 }
 
 .text-servicio h3{
     text-align: left;
     color: var(--colorAzu);
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 5% 0;
 }
 
 .text-servicio p{
     text-align: left;
     font-family: var(--letraTexto);
-    font-size: .9em;
+}
+
+.text-servicio a{
+    background-color: var(--colorAzu);
+    color: #fff;
+    text-decoration: none;
+    padding: 2.5% 5%;
+    border-radius: 5px;
+    font-family: var(--letraTexto);
+}
+
+.text-servicio .btnVer{
+    display: none;
+    visibility: hidden
 }
 
 
@@ -118,46 +144,47 @@ body{
     width: 100%;
     margin-top: 10vh;
     text-align: center;
-    position: relative;
 }
 
 .otros-servicios h2{
-    font-size: 45px;
-    margin-bottom: 25vh;
+    font-size: 3.1em;
+    margin-bottom: 7vh;
 }
 
 .contenedor-otros{
-    width: 100%;
-    display: inline-flex;
+    width: 85%;
+    margin: auto;
+    display: flex;
     align-content: center;
-    justify-content: space-between;
-    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20vh;
 }
 
 .conten-otros{
     /* position: absolute;*/
-     width: 25%;
-     height: 25vh;
-     position: relative;
-     margin: 0 5%;
+    background-image: url('../img/imagen-productos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 30vh;
+    display: flex;
+    align-content: center;
+    margin: 10vh 0;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 20px;
 }
 
 .cont2{
-    position: absolute;
-    left: 33%;
-    top: -60%;
+    transform: translateY(-15vh);   
 }
 
 .conten-otros p{
-    position: absolute;
+    z-index: 5;
     font-size: 40px;
-    top: 53%;
-    left: 10%;
 }
 
-.conten-otros img{
-    width: 100%;
-}
 
         /* CONTACTO */
 
@@ -228,45 +255,14 @@ body{
 /* animaciones */
 .texto a:hover{
     color: var(--colorAzu);
-    background-color: #fff; 
-   
+    background-color: #fff;    
 }
 
 .redes-sociales a:hover i{
     transform: scale(1.2);
 }
 
-
-            /* Resposive */
-
-@media (max-width:860px) {
-    .contactos-datos{
-        display: block;
-        width: 100%;
-    }
-    .contactos-datos .datos{
-        width: 100%;
-        margin-top: 5vh;
-    }
-}
-
-
-
-
-@media (max-width:440px) {
-    .nombre h2{
-        font-size: 2.4em;
-    }
-
-    .datos h3{
-        font-size: 1.4em;
-    }
-
-    .datos p{
-        font-size: 1em;
-    }
-    .redes-sociales a{
-        font-size: 2em;
-    }
-
+.text-servicio a:hover{
+    color: var(--colorAzu);
+    background-color: #fff;   
 }
