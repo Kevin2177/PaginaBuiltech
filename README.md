@@ -12,3 +12,4 @@
 
 -- Checar responsive 
 
+-- Cambiar imagenes de la página (con la forma que debe ser y sus imagenes respectivas).
