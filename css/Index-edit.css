@@ -74,14 +74,13 @@ body{
 
 .servicios-computo h2{
     font-size: 3.1em;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
 
 .contenedor-servicios{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    overflow: hidden;
     /*width: 80%;
     margin: auto;*/
 }   
@@ -95,24 +94,27 @@ body{
     margin: 9vh 4%;
     border-radius: 20px;
     position: relative;
+    transition: all 1s ease;
     text-align: center;
 }
 
 .servicio .img-servicio{
     width: 100%;
-    transform: translateY(-40%);
+    text-align: center;
+    align-items: center;
+    transform: translateY(-56%);
 }
 
 .servicio img{
-    width: 60%;
+    width: 70%;
 }
 
 .servicio .text-servicio{
     width: 100%;
     margin: auto;
     padding: 5%;
-    transform: translateY(-30%);
-    transition: all .4s ease;
+    transform: translateY(-50%);
+    transition: all .6s ease;
 }
 
 .text-servicio h3{
@@ -120,13 +122,13 @@ body{
     color: var(--colorAzu);
     font-size: 1.3em;
     margin: 5% 0;
-    transition: all .4s ease;
+    transition: all .6s ease;
 }
 
 .text-servicio p{
     text-align: left;
     font-family: var(--letraTexto);
-    transition: all .4s ease;
+    transition: all .6s ease;
 }
 
 
@@ -140,7 +142,7 @@ body{
     border-radius: 5px;
     font-family: var(--letraTexto);
     text-align: center;
-    transition: all .4s ease;
+    transition: all .6s ease;
 }
 
 
@@ -330,7 +332,7 @@ body{
 }
 
 .contenedor-servicios .servicio:hover .text-servicio{
-    transform: translateY(-38%);
+    transform: translateY(-50%);
 }
 
 .contenedor-servicios .servicio:hover .btnVer{
