@@ -6,5 +6,7 @@
 
 -- Agregar link  de las redes sociales 
 
--- Checar responsive 
+-- REvisar el reponsive y rehacerlo o hacerlo de la manera mas optima posible
+
+-- Optimizar las imagenes
 
