@@ -13,7 +13,10 @@
 }
 
 body{
-    background-color: black;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: #fff;
 }
 
@@ -151,47 +154,59 @@ body{
 
 .otros-servicios h2{
     font-size: 3.1em;
-    margin-bottom: 7vh;
+    margin-bottom: 17vh;
 }
+
+
+    /* Contenedor de imagenes en Pentagono*/
 
 .contenedor-otros{
-    width: 85%;
+    width: 95%;
+    max-width: 1200px;
     margin: auto;
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20vh;
+
+    /*background-color: aqua;*/
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, 135px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    gap: 1em;
+}
+.conten-penta p{
+    z-index: 2;
+    position: relative;
+    visibility: visible;
+    transition: all .10s ease;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-size: 1.8em;
+    padding: 3%;
+    margin-top: 18vh;
 }
 
-.conten-otros{
+.conten-penta{
+    clip-path: polygon(50% 0%,100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    grid-column: span 2;
+    height: 283px;
     position: relative;
-    background-image: url('../img/imagen-productos.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 290px;
-    height: 30vh;
-    display: flex;
-    align-content: center;
-    margin: 10vh 0;
-    justify-content: center;
-    align-items: center;
-    margin: 5vh 20px;
-    transition: all .5s ease;
-    overflow: hidden;
+    margin: 0 4%;
+}
+
+.conten-penta img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .cont2{
-    transform: translateY(-15vh);   
+    transform: translateY(-10vh);   
+
 }
 
-.conten-otros p{
-    z-index: 5;
-    font-size: 40px;
-    visibility: visible;
-    transition: all .10s ease;
-    z-index: 2;
-}
 
 .descripcion{
    /* visibility: hidden; */
@@ -207,17 +222,12 @@ body{
 }
 
 
-.descripcion p {
+.descripcion p{
+    color: #000;
     font-size: 1.2em;
     padding: 2%;
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 3vh;
-}
-
-.conten-producto p{
-    margin-top: 12vh;
-    font-size: 1.1em;
-    padding: 3%;
 }
 
 
@@ -341,8 +351,8 @@ body{
 /* Animaciones para Otros Servicios */
 
 
-.conten-otros:hover .descripcion{
-    transform: translateY(0);
+.conten-penta:hover .descripcion{
+    transform: translateY(-60%);
 }
 
 .descripcion a:hover{

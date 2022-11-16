@@ -1,8 +1,9 @@
             /* Resposive */
 
 @media (max-width:1185px){
+    /* Contenedor otros servicios */
     .cont2{
-        transform: translateY(0);   
+        transform: translateY(20%);   
     }
 
     .otros-servicios h2{
@@ -31,6 +32,19 @@
 
     }
 }
+
+@media (max-width: 955px){
+
+    .cont2{
+        transform: translateY(0);   
+    }
+    
+    .conten-penta:last-of-type{
+        grid-column: 2 / span 2;
+    }
+
+}
+
 
 @media (max-width:860px) {
     /* Parte final - Datos */
@@ -102,6 +116,23 @@
         margin-top: 15vh;
     }
 }
+
+@media (max-width:605px){
+    /* Parte inicial - Presentacion */
+       .conten-penta:first-of-type{
+        grid-column: 1 / span 2;
+       }
+
+       .contenedor-otros{
+        grid-auto-rows: 283px;
+        width: 100%;
+       }
+
+       .conten-penta:last-of-type{
+        grid-column: 1 / span 2;
+        }
+}
+
 
 @media (max-width:550px){
     /* Parte inicial - Presentacion */
@@ -196,11 +227,6 @@
        
     }
 
-    .conten-otros{
-        width: 90%;
-        height: 35vh;
-    }
-
 }
 
 @media (max-width:400px){
@@ -268,6 +294,7 @@
         
     }
 }
+
 
 /* Excepciones */
 
