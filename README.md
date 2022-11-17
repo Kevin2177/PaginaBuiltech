@@ -7,7 +7,7 @@
 -- Agregar link  de las redes sociales 
 -- Optimizar las imagenes
 
-                         REvisar el reponsive y rehacerlo o hacerlo de la manera mas optima posible:
+                         Revisar el reponsive y rehacerlo o hacerlo de la manera mas optima posible:
 
 
 -- Ver el desplazamiento de la animación en otros servicios
