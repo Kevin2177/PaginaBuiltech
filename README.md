@@ -2,9 +2,9 @@
 
 #Pendientes
 
--- Agregar API de whatsapp y ver mas funcionales a agregar
+-- Agregarle mas diseño a la imagen de la presentación de la PC
 
--- Agregar link  de las redes sociales 
+-- Probar con los colores del diseño original u otros parecidos 
 
--- Checar responsive 
+-- Agregar link's a las redes sociales
 
